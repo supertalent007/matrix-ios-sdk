@@ -180,6 +180,8 @@ NSString *const kMXNotificationCenterAllOtherRoomMessagesRuleID = @".m.rule.mess
                 }
                 
                 BOOL conditionsOk = YES;
+
+                MXLogDebug(@"[MXNotificationCenter] Rule of kind: %@", rule);
                 
                 // The test depends of the kind of the rule
                 switch (rule.kind)
